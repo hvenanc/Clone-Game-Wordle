@@ -1,0 +1,88 @@
+@import url('https: //fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+body {
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#board {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.square {
+    border: 2px solid black;
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.animantion {
+    border: 2px solid #FFFFFF;
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #a4aec4;
+    color: #FFFFFF;
+}
+
+#keyboard {
+    height: 200px;
+}
+
+.keyboardrows {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+}
+
+.keyboardrows button {
+    background-color: #dce1ed;
+    padding: 0;
+    border: 0;
+    height: 58px;
+    cursor: pointer;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-right: 6px;
+    user-select: none;
+
+}
